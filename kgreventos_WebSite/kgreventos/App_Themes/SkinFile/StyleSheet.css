@@ -1,0 +1,40 @@
+﻿body, input, textarea
+{
+	margin: 0px 0;
+	padding: 0;
+	font: normal 11px Arial, helvetica, sans-serif;
+	color: #31333B;
+	line-height: 16px;
+}
+#footer {
+	width: 100%;
+	margin: 0px auto;
+	padding: 3px 0px;
+	height: 12px;
+	background: #eae7f5;
+	font: normal 10px Arial, helvetica, sans-serif;	
+}
+
+.titulo
+{
+	color: #46348b;
+	font-family: 'Bookman Old Style';
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 12px;
+}
+
+
+.titulo3
+{
+	color: #46348b;
+	font-family: 'Lucida Handwriting';
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 12px;
+}
+ 
+.titulo2 {
+ color:#46348b;font-family: "Trebuchet MS",arial, helvetica, sans-serif;font-weight:bold;font-size:14px;padding-left:12px;
+ }
+ 

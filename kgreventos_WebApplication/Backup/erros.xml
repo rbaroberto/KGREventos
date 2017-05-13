@@ -1,0 +1,10 @@
+<Erros>
+  <Erro Data="9/7/2010 11:21:01 AM" EMail="jose@teste.com" Nome="Roberto" Mensagem="" />
+  <Erro Data="9/7/2010 11:22:28 AM" EMail="jose@teste.com" Nome="Roberto" Mensagem="" />
+  <Erro Data="9/7/2010 11:22:55 AM" EMail="jose@teste.com" Nome="Roberto" Mensagem="" />
+  <Erro Data="9/7/2010 11:23:15 AM" EMail="jose@teste.com" Nome="Roberto" Mensagem="" />
+  <Erro Data="9/7/2010 11:24:30 AM" EMail="asdf@asdfas.asdf" Nome="Roberto" Mensagem="" />
+  <Erro Data="9/7/2010 11:24:41 AM" EMail="asdf@asdfas.asdf" Nome="Roberto" Mensagem="asdfasfasdf" />
+  <Erro Data="9/7/2010 11:28:38 AM" EMail="rbariber@hotmail.com" Nome="asdfasdf" Mensagem="tESTE ROBERTO&#xD;&#xA;&#xD;&#xA;AASDFAS" />
+  <Erro Data="9/7/2010 11:35:01 AM" EMail="asdfs@asdf.asdf" Nome="asdfasdf" Mensagem="asdfasf" Tipo="falha" />
+</Erros>

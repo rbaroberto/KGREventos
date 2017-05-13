@@ -1,0 +1,12 @@
+﻿<Menu>
+  <Item Texto="Página inicial" Url="_Default.aspx" />
+  <Item Texto="Decoração" Url="Decoracao.aspx" />
+  <Item Texto="Bolo - Doces Finos" Url="Bolo.aspx" />
+  <Item Texto="Mesas Decoradas" Url="MesaDecorada.aspx" />
+  <Item Texto="Buquês" Url="Buque.aspx" />
+  <Item Texto="Serviço de Buffet" Url="FestasInfantis.aspx" />
+  <Item Texto="Festas Infantis" Url="FestasInfantis.aspx" />
+  <Item Texto="Novas Fotos" Url="NovasFotos.aspx" />
+  <Item Texto="Contato" Url="Contato.aspx" />
+</Menu>
+

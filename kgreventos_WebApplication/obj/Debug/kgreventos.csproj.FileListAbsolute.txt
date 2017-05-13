@@ -1,0 +1,10 @@
+C:\Roberto\Projetos\Neide\Sites\kgreventos\obj\Debug\ResolveAssemblyReference.cache
+C:\Roberto\Projetos\Neide\Sites\kgreventos\bin\kgreventos.dll
+C:\Roberto\Projetos\Neide\Sites\kgreventos\bin\kgreventos.pdb
+C:\Roberto\Projetos\Neide\Sites\kgreventos\obj\Debug\kgreventos.dll
+C:\Roberto\Projetos\Neide\Sites\kgreventos\obj\Debug\kgreventos.pdb
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.dll.config
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.dll
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.pdb
+C:\Roberto\Projetos\kgreventos_WebApplication\obj\Debug\kgreventos.dll
+C:\Roberto\Projetos\kgreventos_WebApplication\obj\Debug\kgreventos.pdb

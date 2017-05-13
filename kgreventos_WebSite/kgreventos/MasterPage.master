@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>KGR EVENTOS</title>
+    <meta name="descrição" content="KGR Eventos e Decoração Festas de Casamento, 15 anos, Infantis, Eventos e Decorações em geral, Buquês, Mesas Decoradas, Serviço de Buffet, são paulo, diadema, são bernardo, santo andré, abc" />
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<link rel="stylesheet" type="text/css" href="app_themes/skinfile/stylesheet.css">
+<body  topmargin="0"  leftmargin=0 rightmargin=0 topmargin=0 bottommargin=0 bgcolor=#46348b>
+    <form id="form1" runat="server">
+    <table width="100%" height="<%
+        int height = 500;
+        try{
+            height=Convert.ToInt32(Session["H"]);
+            if(height<500){
+                height=500;
+            }
+        }catch{}
+        Response.Write(height);
+    %>" cellspacing="0" cellpadding="0">
+        <tr><td width="100%" align="center" valign="middle">
+            <table width="1024"  border="1" bordercolor="#c8bfe7" cellspacing="0" cellpadding="0">
+                <tr><td valign="top">
+                <table width="100%" border="0" bgcolor="#ffffff" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2" height="40" align="center" bgcolor="#c8bfe7" height="150">
+                        <table cellspacing="0" cellpadding="2"><tr><td>
+                            <asp:Image ID="imgTopo" runat="server" /></td></tr></table>
+                    </td>                
+                </tr>
+                <tr><td width="100%"valign="top">
+                    <table width="100%" height="320" border="0" cellpadding="0" cellspacing="0")>
+                    <tr>
+                    <td width="80" valign="top" align="center" style="background-image:url(images/fundoMenuLateral1.gif)">
+                    
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr><td>&nbsp;</td></tr>
+                            <tr><td valign="middle">
+                                <table width="180">
+                                <%
+                                    System.Xml.XmlDocument xml = new System.Xml.XmlDocument();
+                                    xml.Load(Server.MapPath("custom_files/menu.xml"));
+                                    string[] arquivo = System.Web.HttpContext.Current.Request.Url.AbsolutePath.Split('/');
+
+                                    foreach (System.Xml.XmlElement temp in xml.DocumentElement.ChildNodes)
+                                    {
+
+                                        if (arquivo[arquivo.Length - 1].ToUpper() == temp.GetAttribute("Url").ToUpper())
+                                        {
+                                        %>
+                                            <tr><td>
+                                                <table height="20" style="border: SOLID 3PX purple; cursor: hand" onclick="location.href='<%=temp.GetAttribute("Url")%>'" border="0" width="96%" cellspacing="2" cellpadding="0" bgcolor="#D9D2EE">
+                                                <tr>
+                                                    <td bgcolor="#624BBC" align="left" style="font-family: 'Arial Narrow'; font-weight: bold; color:#FFFFFF; font-size: 13px;">&nbsp;&nbsp;&nbsp;<%=temp.GetAttribute("Texto")%></td>
+                                                </tr>
+                                            </table>                       
+                                            </td></tr>
+                                        <%  
+                                           }
+                                        else if (temp.GetAttribute("Url").ToUpper() == "NOVASFOTOS.ASPX")
+                                        {
+                                        %>
+                                            
+                                            <tr><td>
+                                            
+                                            <table  height="20" style="border:dashed 2px purple; cursor: hand" onclick="location.href='<%=temp.GetAttribute("Url")%>'" border="0" width="96%" cellspacing="2" cellpadding="0" bgcolor="#D9D2EE">
+                                                <tr>
+                                                    <td width="6"  bgcolor="#624BBC"></td><td align="left" style="font-family: 'Arial Narrow'; font-weight: bold; color:#222222; font-size: 13px;">&nbsp;&nbsp;&nbsp;<%=temp.GetAttribute("Texto")%></td>
+                                                </tr>
+                                            </table>
+                                        </td></tr>
+                                            
+                                            
+                                        <%      
+                                        }else{
+                                        %>
+                                        <tr><td>
+                                            <table height="20"  style="border:DASHED 1px PURPLE; cursor: hand" onclick="location.href='<%=temp.GetAttribute("Url")%>'" border="0" width="96%" cellspacing="2" cellpadding="0" bgcolor="#D9D2EE">
+                                                <tr>
+                                                    <td width="6" bgcolor="#624BBC"></td><td align="left" style="font-family: 'Arial Narrow'; font-weight: bold; color: #624BBC; font-size: 13px;">&nbsp;&nbsp;&nbsp;<%=temp.GetAttribute("Texto")%></td>
+                                                </tr>
+                                            </table>
+                                        </td></tr>
+                                        <%    
+                                    }
+                                        
+                                    }
+                                %>
+                                </table>
+                            </td></tr>
+                        </table>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <% if (false)
+                           { %>
+                        Parceria
+                        <a href="http://www.rpceventos.com.br" target="_blank"><img width="160" style="border:solid 1px black" src="images/rpc.jpg" /></a>
+                            <% } %>
+                    </td>
+                    <td style="background-image:url(images/barraVertical.png);background-repeat:repeat-y" width="1">&nbsp;</td>
+                    <td align="left" valign="top" height="450" bgcolor="<% 
+                        if (arquivo[arquivo.Length-1].ToUpper()=="_DEFAULT.ASPX"){
+                            //só na página default precisa colocar o fundo, pq as outras tem fundo branco e ela não
+                            Response.Write("#D9D2EE");
+                        }
+                    %>">
+                            <asp:ContentPlaceHolder id="ConteudoPrincipal" runat="server">
+                        
+                            </asp:ContentPlaceHolder>
+                    </td>
+                    </tr>
+                    </table>
+                </td></tr>
+                
+                            <tr><td valign="middle" height="1">
+                                            
+                                <div id="footer">
+                	                (11) 9297-9945 | 8468-0687 | 4094-3163 
+                                    - Neide Albuquerque - KGR Eventos e Decoração
+                                </div>
+                            </td></tr>
+
+                
+            </table>
+                            </td></tr>
+</table>
+        </td></tr>
+    </table>
+    </form>
+</body>
+</html>

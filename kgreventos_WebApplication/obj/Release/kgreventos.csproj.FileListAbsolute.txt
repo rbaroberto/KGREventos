@@ -1,0 +1,6 @@
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.dll.config
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.dll
+C:\Roberto\Projetos\kgreventos_WebApplication\bin\kgreventos.pdb
+C:\Roberto\Projetos\kgreventos_WebApplication\obj\Release\kgreventos.csprojResolveAssemblyReference.cache
+C:\Roberto\Projetos\kgreventos_WebApplication\obj\Release\kgreventos.dll
+C:\Roberto\Projetos\kgreventos_WebApplication\obj\Release\kgreventos.pdb

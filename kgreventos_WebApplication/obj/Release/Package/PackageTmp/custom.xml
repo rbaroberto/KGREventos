@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<header_vars>
+		<text_color>46348B</text_color>		
+		<text_header_1 x_pos="110" y_pos="138.5" size="29" letter_spacing="0">KGR Eventos</text_header_1>
+    <text_header_2 x_pos="110" y_pos="205" size="10" letter_spacing="2.5">(11) 9999-9999</text_header_2>
+  <image_header_1>custom_files/topo.jpg</image_header_1>
+</header_vars>
